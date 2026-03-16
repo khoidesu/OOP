@@ -169,7 +169,7 @@ public:
     {
         return mau;
     }
-    Fraction operator+(Fraction &other) // compare 2 fractions a and b, find the max one
+    Fraction operator+(Fraction &other) // calculate sum
     {
         Fraction res;
         res.tu = tu * other.mau + other.tu * mau;
@@ -177,7 +177,7 @@ public:
         res.rutgon();
         return res;
     }
-    Fraction operator-(Fraction &other) // compare 2 fractions a and b, find the max one
+    Fraction operator-(Fraction &other) // calculate diff
     {
         Fraction res;
         res.tu = tu * other.mau - other.tu * mau;
@@ -185,7 +185,7 @@ public:
         res.rutgon();
         return res;
     }
-    Fraction operator*(Fraction &other) // compare 2 fractions a and b, find the max one
+    Fraction operator*(Fraction &other) // calculate product
     {
         Fraction res;
         res.tu = tu * other.tu;
@@ -193,7 +193,7 @@ public:
         res.rutgon();
         return res;
     }
-    Fraction operator/(Fraction &other) // compare 2 fractions a and b, find the max one
+    Fraction operator/(Fraction &other) // calculate div
     {
         Fraction res;
         res.tu = tu * other.mau;
