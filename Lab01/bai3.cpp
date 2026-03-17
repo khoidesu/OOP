@@ -169,7 +169,7 @@ public:
     {
         return mau;
     }
-    Fraction operator+(Fraction &other) // compare 2 fractions a and b, find the max one
+    Fraction operator+(Fraction &other) // +
     {
         Fraction res;
         res.tu = tu * other.mau + other.tu * mau;
@@ -177,7 +177,7 @@ public:
         res.rutgon();
         return res;
     }
-    Fraction operator-(Fraction &other) // compare 2 fractions a and b, find the max one
+    Fraction operator-(Fraction &other) // -
     {
         Fraction res;
         res.tu = tu * other.mau - other.tu * mau;
@@ -185,7 +185,7 @@ public:
         res.rutgon();
         return res;
     }
-    Fraction operator*(Fraction &other) // compare 2 fractions a and b, find the max one
+    Fraction operator*(Fraction &other) // *
     {
         Fraction res;
         res.tu = tu * other.tu;
@@ -193,7 +193,7 @@ public:
         res.rutgon();
         return res;
     }
-    Fraction operator/(Fraction &other) // compare 2 fractions a and b, find the max one
+    Fraction operator/(Fraction &other) // /
     {
         Fraction res;
         res.tu = tu * other.mau;
@@ -246,13 +246,13 @@ int main()
     cout << "Tong cua 2 phan so la: ";
     Sum.output();
     cout << endl;
-    cout << "Tong cua 2 phan so la: ";
+    cout << "Hieu cua 2 phan so la: ";
     Diff.output();
     cout << endl;
-    cout << "Tong cua 2 phan so la: ";
+    cout << "Tich cua 2 phan so la: ";
     Multi.output();
     cout << endl;
-    cout << "Tong cua 2 phan so la: ";
+    cout << "Thuong cua 2 phan so la: ";
     Div.output();
     cout << endl;
     return 0;
